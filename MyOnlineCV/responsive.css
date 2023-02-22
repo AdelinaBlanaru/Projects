@@ -1,0 +1,422 @@
+@media only screen and (max-width:360px) {
+  h2{
+    text-align: center;
+  }
+  .light-bg .navbar-toggler{
+    background-color: white;
+  }
+  .dark-bg .navbar{
+    background-color: rgb(11, 11, 18);
+  }
+  .light-bg .navbar{
+    background-color: white;
+  }
+  .home .portrait-border {
+    height: 100%;
+    width:100%;
+    border:0px;   
+  }
+  .portrait-border img{
+    border:0px;
+  }
+  .light-bg .portrait .portrait-border{
+    border:0px;
+  }
+  .light-bg .portrait .portrait-border img{
+    border:0px;
+  }
+  .home-padding {
+    padding: 60px 0;
+  }
+  .circle{
+    margin-left:0px;
+  }
+  .navbar-toggler-icon{
+    margin-right:30px;
+  }
+  .about-image img{
+    padding-right:0px;
+  }
+  .about-list ul{
+    display:inline;
+  }
+  .about-do-item{
+    margin-bottom:10px;
+  }
+  .technical-skills h3, .professional-skills h3{
+    text-align: center;
+  }
+  .professional-skills{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+  }
+  .progress-circles li{
+    display:flex;
+  }
+  ul.progress-circles li{
+    width:100%;
+  }
+  .circle{
+    margin-right:5px;
+    margin-left:5px;
+  }
+  .progress-circles li{
+    margin-left:15px;
+    margin-right:15px;
+    vertical-align:middle;
+  }
+  .portfolio .row{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+  }
+  .grid{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+  }
+  .grid .w-100{
+    width:100px !important;
+  }
+  .project-name{
+    width:100px;
+    text-align: center;
+  }
+  
+  .contact-logo a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .contact-footer .social-icon li{
+    margin-right:15px;
+  }
+  .chatbot{
+    margin-left:15px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  h2,h3{
+    text-align:center;
+  }
+  .dark-bg .navbar{
+    background-color: rgb(11, 11, 18);
+  }
+  .light-bg .navbar{
+    background-color: white;
+  }
+  .xs-column-reverse {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+  header,section,footer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header {
+    padding: 0;
+  }
+  .home-padding {
+    padding: 100px 0;
+  }
+  .home .portrait {
+    margin-bottom: 30px;
+  }
+  .home .home-info {
+    padding: 0;
+    padding-top: 50px;
+    text-align: center;
+    margin-top: 40px;
+  }    
+  .home-info .social-icon,
+  .contact-footer .social-icon {
+    display: flex;
+    float:none;
+    text-align:center;
+  }
+  .about-image img{
+    padding-right:0px;
+  }
+  .portfolio .row{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+  }
+  .grid{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+  }
+  .grid .w-100{
+    width:300px !important;
+  }
+  .project-name{
+    width:300px;
+    text-align:center;
+  }
+  .contact-logo a{
+    display: flex;
+    justify-content: center;
+  }
+  .contact-logo a span{
+    display:flex;
+    align-items: center;
+  }
+  .row .chatbot{
+    display:flex;
+    justify-content: center;
+  }
+   #chatButton{
+    margin-right:0px !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  h2,h3{
+    text-align:center;
+  }
+  .dark-bg .navbar{
+    background-color: rgb(11, 11, 18);
+  }
+  .light-bg .navbar{
+    background-color: white;
+  }
+  .xs-column-reverse {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+  .navbar-toggler-icon span{
+    margin-right:15px;
+  }
+  header,section,footer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header {
+    padding: 0;
+  }
+  .home-padding {
+    padding: 100px 0;
+  }
+  .home .right, .home .left{
+    width:100%;
+  }
+  .home .portrait {
+    margin-bottom: 30px;
+  }
+  .home .home-info {
+    padding: 0;
+    padding-top: 50px;
+    text-align: center;
+    margin-top: 40px;
+  }    
+  .home-info .social-icon,
+  .contact-footer .social-icon {
+    display: flex;
+    float:none;
+    text-align:center;
+  }
+  .about .about-info {
+    padding-left: 5px;
+    text-align: center;
+    margin: 30px 15px;
+  }
+  .about-image{
+    width:auto;
+    height:auto;
+  }
+  .about-card{
+    width:100%;
+  }
+  .about-do-item{
+    margin-bottom:10px;
+   
+  }
+  .about-do-item h3{
+    font-size:14px;
+  }
+  .skills .professional-skill {
+    padding-right: 0;
+    padding: 0px;
+    margin-left:0px;
+  }
+  .experience h3 {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .education {
+    margin-bottom: 30px;
+    padding-right: 0;
+  }
+  .work {
+    padding-left: 0;
+    margin-bottom: 30px;
+  }
+  .skills .professional-skills {
+    margin-bottom: 50px;
+  }
+  .section-separator {
+    padding: 30px 0;
+  }
+  .home .home-info ul li {
+    width: 100%;
+    margin: 6px 10px;
+  }
+  .contact .contact-cards-deck .contact-card-item {
+    display: block;
+    padding: 20px 0px;
+  }
+  .contact-cards-deck .contact-card-item {
+   margin-bottom:30px;
+   padding:30px;
+   border-radius:4px;
+   text-align: center;
+  } 
+  .xs-no-padding {
+    padding: 0;
+  }
+  .social-icon {
+    display: block;
+    margin: 0 auto;
+    float: none;
+    text-align: center;
+  }
+  .social-icon li {
+    list-style: none;
+    float: none;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 0px;
+    margin-right: 4px;
+    margin-left: 4px;
+  }
+  .text-left.text-xs-center {
+    text-align: center;
+  }
+  .contact-map {
+    padding: 0px;
+    margin-top: 40px;
+  }
+  .contact-logo {
+    text-align: center;
+  }
+  .contact-logo a{
+    display:flex;
+    flex-direction: row;
+  }
+  .contact-logo a span{
+    display:flex;
+    align-items:center;
+  }
+  .contact-list{
+    display:flex;
+    justify-content: center;
+  }
+  .chatbot{
+    display:flex;
+    flex-direction:row;
+    justify-content: center !important;
+  }
+}
+
+@media only screen and (max-width: 991px){
+ 
+  .mh-xs-mobile-nav{
+    z-index:99;
+  }
+  .mh-xs-mobile-nav .navbar-collapse{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 320px;
+    left: 0;
+    z-index: 990;
+    margin-top: 0px;
+    padding: 0;
+    background-color: #0bceaf;   
+  }
+  .mh-xs-mobile-nav .navbar-nav {
+    padding-top: 50px;
+    padding-right: 20px;
+  }
+  .nav-strict .navbar-toggler {
+    margin-top: 0px;
+  }
+  .header .container{
+    height:10px;
+  }
+  .section-separator {
+    padding: 40px 0;
+  }  
+  .home .section-separator {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .portrait{
+    padding-top: 50px;
+  }
+  .social-icon .bi {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+  }  
+  .home .home-info {
+    padding: 0;
+  }
+  .mh-header {
+    padding: 10px 0;
+  }
+  .home-padding {
+    padding: 100px 0;
+  }
+  .home .home-info h2 {
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 54px;
+  }
+  .home .home-info h4 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .about .about-image img{
+    padding-top:50px;
+  }
+  .about .about-info {
+    padding-left: 5px;
+  }
+  .professional-skills {
+    padding-left: 0;
+  }
+  .skills .professional-skill {
+    padding-right: 0;
+  }  
+  .footer .contact-cards-deck .contact-card-item .card-info {
+    padding-left: 20px;
+    overflow:hidden;
+  }
+  .contact-logo{
+    margin-top:15px;
+    display:flex;
+    align-items: center;
+    
+  }
+  .chatbot{
+    display:flex;
+    justify-content: center !important;
+  }
+}
