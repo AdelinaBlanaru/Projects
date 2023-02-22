@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <style>
+        html, body{
+            height: 100%;
+            width: 100%;
+        }
+        body{
+            margin:0px;
+        }
+        .calculator-container{
+            width:100vw;
+            height:100vh;
+            background-image: url(images/fruits.jpg);
+            background-size: cover;
+            color:rgb(220, 53, 53);
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+            text-align:center;
+        }
+        .calculator-container h1{
+            margin:0px;
+            padding:5px;
+        }
+        .calculate{
+            background-color: rgb(220, 53, 53);
+            color:rgb(244, 157, 26);
+            padding: 10px;
+            border: solid;
+            border-color:rgb(255, 225, 93);
+            margin:10px;
+            font-weight: bold;
+        }
+        .name-input-field,.gender-input-field,.height-input-field,.weight-input-field{
+            background-color:rgb(255, 225, 93);
+            border:none;
+            color:rgb(220, 53, 53);
+            font-weight: bold;
+            height:24px;
+        }
+        .gender-input-field{
+            width:180px;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="calculator-container">
+        <h1>BMI CALCULATOR</h1>
+        <p>Full Name:</p>
+        <input class="name-input-field" type="text">
+        <p>Gender:</p>               
+        <select name="gender" id="gender" class="gender-input-field">            
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select>
+        <p>Height in meters:</p>
+        <input class="height-input-field" type="text">
+        <p>Weight in kilograms:</p>
+        <input class="weight-input-field" type="text"><br>
+        <button class="calculate" onclick="bmiStatus(BMI)"> Calculate</button>
+        <h3 class="result"></h3>
+        <h4 class="result-statement" ></h4>
+    </div>
+    
+    <script>
+        let fullNameInput=document.querySelector(".name-input-field");
+        let genderInput=document.querySelector(".gender-input-field");
+        let heightInput = document.querySelector(".height-input-field");
+        let weightInput = document.querySelector(".weight-input-field");
+        let calculateButton = document.querySelector(".calculate");
+        let result = document.querySelector(".result");
+        let statement = document.querySelector(".result-statement");
+        let BMI, height, weight;        
+        function bmiStatus(BMI){
+            fullName=fullNameInput.value;
+            gender=genderInput.value;
+            height = heightInput.value;
+            weight = weightInput.value;
+            BMI = weight/(height**2); 
+            result.innerText = BMI;
+            if(BMI < 18.5){
+                statement.innerHTML = fullName + " | " + gender + " | BMI: " + BMI + " | " + "Underweight";
+                result.style.color=statement.style.color="rgb(95, 157, 247)";
+            }else if((BMI > 18.5) && (BMI < 24.9)){
+                statement.innerHTML = fullName + " | " + gender + " | BMI: " + BMI + " | " + "Normal Weight";
+                result.style.color=statement.style.color="rgb(95, 141, 78)"; 
+            }else if((BMI > 25) && (BMI < 29.9 )){
+                statement.innerHTML = fullName + " | " + gender + " | BMI: " + BMI + " | " + "Overweight"; 
+                result.style.color=statement.style.color="rgb(244, 157, 26)";
+            }else{
+                statement.innerHTML = fullName + " | " + gender + " | BMI: " + BMI + " | " + "Obese"; 
+                result.style.color=statement.style.color="rgb(220, 53, 53)";
+            }
+            return statement;
+        };       
+    </script> 
+    
+</body>
+</html>
