@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>My Online CV</title>
+  <!-- Meta tags -->
+  <meta charset="UTF-8">
+  <meta name="description" content="Online resume of a front-end developer in the form of a personal website ">
+  <meta name="author" content="Adelina Blanaru">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="images/favicon.png">
+  <!--Icons-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <!-- Fonts-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <!-- Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <!-- CSS-->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="chatbot/chatbot.css">
+</head>
+
+<body class="main dark-bg">
+  <!--NAVIGATION-->
+  <header class="header mh-fixed-nav nav-scroll mh-xs-mobile-nav nav-strict" id="header" style="visibility: visible;">
+    <div class="container">
+      <div class="row">
+        <nav class="navbar navbar-expand-lg mh-nav nav-btn ">
+          <i class="bi bi-toggles" onclick="toggle()"></i>
+          <a class="navbar-brand" href="#home">
+            <img src="images/logo.png">
+          </a>
+          <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+            data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+            aria-label="Toggle navigation" onclick="openMenu()">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarTogglerDemo03">
+            <ul class="navbar-nav mr-0 ml-auto" id="menu-items" data-toggle="collapse"
+              data-target="#navbarTogglerDemo03">
+              <li class="nav-item active">
+                <a class="nav-link" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#experiences">Experiences</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!--HOME-->
+  <section class="home" id="home">
+    <div class="container">
+      <div class="row xs-column-reverse section-separator vertical-middle-content home-padding">
+        <div class="col-sm-6 left">
+          <div class="home-info">
+            <div class="hello">
+              <span> Hello I'm</span>
+            </div>
+            <h2>Adelina-Gabriela Blănaru</h2>
+            <h4>Front-end Developer</h4>
+            <ul>
+              <li>
+                <i class="bi bi-envelope-at-fill"></i>
+                <a href="mailto:adelinablanaru6@yahoo.com">adelinablanaru6@yahoo.com</a>
+              </li>
+              <li>
+                <i class="bi bi-telephone-fill"></i>
+                <a href="callto:">+40766620467</a>
+              </li>
+              <li>
+                <i class="bi bi-geo-alt-fill"></i>
+                <adress>Iași, România</adress>
+              </li>
+            </ul>
+            <ul class="social-icon">
+              <li><a href="https://www.facebook.com/adelina.blanaru.5" target="_blank"><i class="bi bi-facebook"></i></a></li>
+              <li><a href="https://github.com/AdelinaBlanaru" target="_blank"><i class="bi bi-github" target="_blank"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/adelina-blanaru-09998a197/?trk=public-profile-join-page" target="_blank"><i
+                    class="bi bi-linkedin"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-6 right">
+          <div class="portrait">
+            <div class="portrait-border">
+              <img src="images/portrait.png" alt class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--ABOUT-->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="row section-separator">
+        <div class="col-sm-12 col-md-6 left">
+          <div class="about-image img-fluid">
+            <img src="images/about-image.png">
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 right">
+          <div class="about-info">
+            <h2>About me</h2>
+            <p>
+              Hello, I’m Adelina, web-developer based in Iași. I do website design & building and customization.
+              Also I am good at
+            </p>
+            <div class="about-list">
+              <ul>
+                <li><span>HTML</span></li>
+                <li><span>CSS</span></li>
+                <li><span>Bootstrap</span></li>
+                <li><span>JavaScript</span></li>
+                <li><span>TypeScript</span></li>
+                <li><span>Angular</span></li>
+              </ul>
+            </div>
+            <a href="portfolio//cv-template.pdf" class="btn" target="_blank">Download CV
+              <i class="bi bi-download"></i>
+            </a>
+          </div>
+        </div>
+        <!--ABOUT WHAT I DO-->
+        <div class="about-do">
+          <div class="container">
+            <div class="row section-separator">
+              <div class="col-sm-12 section-title text-center">
+                <h3>What I do</h3>
+              </div>
+              <div class="about-card col-sm-4 ">
+                <div class="about-do-item shadow-lg rounded ">
+                  <i class="bi bi-bullseye"></i>
+                  <h3 class="card-title">UI Design</h3>
+                  <p class="card-text">Build interfaces in software or computerized devices, focusing on looks or style.
+                    Aim to create interfaces which users find easy to use and pleasurable.</p>
+                </div>
+              </div>
+              <div class="about-card col-sm-4 ">
+                <div class="about-do-item shadow-lg rounded">
+                  <i class="bi bi-code-slash"></i>
+                  <h3 class="card-title">Web Development</h3>
+                  <p class="card-text">Creating webpage layouts, writing code, editing website content, and making
+                    adjustments based on client feedback.</p>
+                </div>
+              </div>
+              <div class="about-card col-sm-4 ">
+                <div class="about-do-item shadow-lg rounded">
+                  <i class="bi bi-app-indicator"></i>
+                  <h3 class="card-title">App Development</h3>
+                  <p class="card-text">Involved in the process, life, and creation of software applications that run on
+                    a mobile device aimed at helping users. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!--SKILLS-->
+  <section>
+    <div class="skills" id="skills">
+      <div class="container">
+        <div class="row section-separator">
+          <div class="col-sm-12 col-md-6 left">
+            <div class="technical-skills section-title">
+              <h3 class="section-title">Technical Skills</h3>
+              <span>HTML</span>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                  aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%">85%
+                </div>
+              </div>
+              <span>CSS</span>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                  aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%
+                </div>
+              </div>
+              <span>JavaScript</span>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                  aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">60%
+                </div>
+              </div>
+              <span>Angular</span>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                  aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">40%
+                </div>
+              </div>
+              <span>Python</span>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                  aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%">30%
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 right">
+            <div class="professional-skills section-title">
+              <h3 class="section-title">Professional Skills</h3>
+              <ul class="progress-circles">
+                <li>
+                  <div class="circle p-95">
+                    <div class="skill ">Communication<br>95%</div>
+                  </div>
+                </li>
+                <li>
+                  <div class="circle p-80">
+                    <div class="skill ">Team Work<br> 80%</div>
+                  </div>
+                </li>
+                <li>
+                  <div class="circle p-86">
+                    <div class="skill ">Project Management<br> 86%</div>
+                  </div>
+                </li>
+                <li>
+                  <div class="circle p-70">
+                    <div class="skill ">Creativity <br>70%</div>
+                  </div>
+                </li>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  </section>
+
+  <!--EXPERIENCES-->
+  <section>
+    <div class="experiences" id="experiences">
+      <div class="container">
+        <div class="row section-separator">
+          <div class="col-sm-12 col-md-6 left">
+            <div class="experiences-education">
+              <h2 class="section-title">Education</h2>
+              <div class="education">
+                <div class="education-item shadow-lg">
+                  <h4>Front-end Web Development</h4>
+                  <a
+                    href="https://scoalainformala.ro/?gclid=Cj0KCQiA_P6dBhD1ARIsAAGI7HD2346Q1Z0Ge7qazWsmKmF3LbPq53tZ-dklyP9rfHi95K8DDmOggEQaAhvKEALw_wcB" target="_blank">The
+                    Informal School of IT</a>
+                  <div class="education-year">2022-2023</div>
+                </div>
+                <div class="education-item shadow-lg">
+                  <h4>Faculty of Pharmacy</h4>
+                  <a href="https://www.umfiasi.ro/ro" target="_blank"> University of Medicine and Pharmacy "Grigore T. Popa" Iași </a>
+                  <div class="education-year">2015-2020</div>
+                </div>
+                <div class="education-item  shadow-lg">
+                  <h4>Natural Sciences Profile</h4>
+                  <a href="http://cncvhusi.ro/" target="_blank">National College "Cuza Vodă" Huși</a>
+                  <div class="education-year">2011-2015</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 right">
+            <div class="experiences-work">
+              <h2 class="section-title">Work experience</h2>
+              <div class="work">
+                <div class="work-item shadow-lg">
+                  <h4>Clinical Pharmacy Resident</h4>
+                  <a href="https://www.spitalspiridon.ro" target="_blank">„St. Spiridon” Emergency Clinical Hospital Iasi</a>
+                  <div class="education-year">2020-2023</div>
+                </div>
+                <div class="work-item shadow-lg">
+                  <h4>Pharmacist</h4>
+                  <a href="https://www.linkedin.com/company/a&d-pharma/?originalSubdomain=ro" target="_blank">A&D Pharma</a>
+                  <div class="education-year">2022-2023</div>
+                </div>
+                <div class="work-item shadow-lg">
+                  <h4>Member</h4>
+                  <a href="https://ssfiasi.ro/" target="_blank">Iași Society of Pharmacy Students</a>
+                  <div class="education-year">2022-2023</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Portfolio-->
+  <section>
+    <div class="portfolio" id="portfolio">
+      <div class="container">
+        <div class="row section-separator">
+          <div class="col-sm-12 section-title text-center portfolio-info">
+            <h2>Recent Portfolio</h2>
+          </div>
+          <div class="col-4 grid">
+            <img src="images/contact-cover.png" class="w-100 shadow-1-strong rounded mb-4">
+            <div class="project-name">
+              <a href="portfolio//homework-css.html" target="_blank"><i class="bi bi-search"></i>
+                <div> Contact Form</div>
+              </a>
+            </div>
+            <img src="images/rps-cover.jpg" class="w-100 shadow-1-strong rounded mb-4">
+            <div class="project-name">
+              <a href="portfolio//rock_paper_scissors_DOM.html" target="_blank"><i class="bi bi-search"></i>
+                <div> Rock Paper Scissors</div>
+              </a>
+            </div>
+          </div>
+          <div class="col-4 grid">
+            <img src="images/grid-cover.jpg" class="w-100 shadow-1-strong rounded mb-4">
+            <div class="project-name">
+              <a href="portfolio//grid.html" target="_blank"><i class="bi bi-search"></i>
+                <div> Grid Poster</div>
+              </a>
+            </div>
+          </div>
+          <div class="col-4 grid">
+            <img src="images/responsive.webp" class="w-100 shadow-1-strong rounded mb-4">
+            <div class="project-name">
+              <a href="portfolio//responsive-web-design.html" target="_blank"><i class="bi bi-search"></i>
+                <div> Responsive Web Design</div>
+              </a>
+            </div>
+            <img src="images/bmi-cover.jpg" class="w-100 shadow-1-strong rounded mb-4">
+            <div class="project-name">
+              <a href="portfolio//bmi_calculator.html" target="_blank"><i class="bi bi-search"></i>
+                <div> BMI Calculator</div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--CONTACT-->
+  <footer>
+    <div class="contact" id="contact">
+      <div class="container">
+        <div class="row section-separator">
+          <div class="col-sm-12 section-title">
+            <h2>Contact me</h2>
+          </div>
+          <div class="contact-cards-deck col-sm-12">
+            <div class="row">
+              <div class="col-sm-12 col-md-4 ">
+                <div class="contact-card-item">
+                  <div class="card-info">
+                    <div class="contact-icon">
+                      <i class="bi bi-pin-map-fill"></i>
+                    </div>
+                    <h4>Address</h4>
+                    <h6>Iași, România</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-4  ">
+                <div class="contact-card-item">
+                  <div class="card-info">
+                    <div class="contact-icon">
+                      <i class="bi bi-envelope-at-fill"></i>
+                    </div>
+                    <h4>E-mail address</h4>
+                    <a href="mailto:adelinablanaru6@yahoo.com">adelinablanaru6@yahoo.com</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-4 ">
+                <div class="contact-card-item">
+                  <div class="card-info">
+                    <div class="contact-icon">
+                      <i class="bi bi-telephone-fill"></i>
+                    </div>
+                    <h4>Phone</h4>
+                    <a href="callto:+40766620467">+40766620467</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <form id="contact-form" action="https://formspree.io/f/xayznvlp" method="POST">
+              <div id="submitFdbck" class="h3 text-center hidden"></div>
+              <div class="row">
+                <div class="col-sm-12">
+                  <input type="text" id="fname" name="fname" placeholder="First Name" required><br>
+                </div>
+                <div class="col-sm-12">
+                  <input type="text" id="lname" name="lname" placeholder="Last Name" required><br>
+                </div>
+                <div class="col-sm-12">
+                  <input type="email" id="email" name="email" placeholder="Your email" required><br>
+                </div>
+                <div class="col-sm-12">
+                  <textarea id="message" name="message" placeholder="Message" required></textarea><br>
+                </div>
+                <div class="col-sm-12">
+                  <button type="submit" id="contact-form-button" class="btn form-btn">Send message</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <div class="contact-map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d86818.84040650114!2d27.51693063728229!3d47.15611595600953!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40cafb7cf639ddbb%3A0x7ccb80da5426f53c!2zSWHImWk!5e0!3m2!1sro!2sro!4v1673707603778!5m2!1sro!2sro"
+                class="w-100" height="500" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <div class="row xs-column sm-row section separator">
+              <div class="col-sm-6">
+                <div class="contact-logo text-xs-center">
+                  <a href="#home">
+                    <img src="images/logo.png"> <span>@2023 All rights reserved</span>
+                  </a>
+                </div>
+              </div>
+              <div class="contact-footer col-sm-6 ">
+                <ul class=" contact-list social-icon justify-content-center">
+                  <li><a href="https://www.facebook.com/adelina.blanaru.5" target="_blank"><i class="bi bi-facebook"></i></a></li>
+                  <li><a href="https://github.com/AdelinaBlanaru" target="_blank"><i class="bi bi-github"></i></a></li>
+                  <li><a href="https://www.linkedin.com/in/adelina-blanaru-09998a197/?trk=public-profile-join-page" target="_blank"><i
+                        class="bi bi-linkedin"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!--CHATBOT-->
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="chatbot col-sm-12 col-md-12">
+          <button type="button" id="chatButton" onclick="openChat()"><i class="bi bi-chat-fill"></i> Let's Chat
+          </button>
+          <div class="box" id="chatBox">
+            <div class="chatContainer">
+              <div class="top">
+                <h3>Let's chat</h3>
+              </div>
+              <div class="mid">
+                <div class="chat">
+                  <i class="bi bi-person-circle"></i>
+                  <p id="userMessage"></p>
+                  <i class="bi bi-robot"></i>
+                  <p id="chatLog"> </p>
+                </div>
+              </div>
+              <div class="input">
+                <input type="text" id="userBox" onkeydown="if(event.key == 'Enter'){ talk()}"
+                  placeholder="Type message...">
+                <button type="button" id="close" onclick="closeChat()">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+  <script src="chatbot/chatbot.js"></script>
+</body>
+
+</html>
