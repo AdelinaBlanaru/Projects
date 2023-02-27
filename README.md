@@ -1,18 +1,20 @@
 
-# My Online CV
+ #  ![logo](https://user-images.githubusercontent.com/96794732/221562044-1e7f7edf-01fe-4d57-86b8-175541eaced7.png)
+  # My Online CV
+
 ![2023-02-27](https://user-images.githubusercontent.com/96794732/221555116-13515203-bcc8-4930-9ad5-f4298bd55b54.png)
 
 # Key Features
 
--Dark/Light mode
+- Dark/Light mode
 
--Responsive design
+- Responsive design
 
--Sticky menu
+- Sticky menu
 
--Contact form
+- Contact form
 
--Chatbot
+- Chatbot
 
 # How To Use
 To clone and run this application, you'll need Git installed on your computer. From your command line:
