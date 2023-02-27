@@ -3,6 +3,7 @@
   # My Online CV
 
 ![2023-02-27](https://user-images.githubusercontent.com/96794732/221555116-13515203-bcc8-4930-9ad5-f4298bd55b54.png)
+For application preview see Documentation
 
 # Key Features
 
