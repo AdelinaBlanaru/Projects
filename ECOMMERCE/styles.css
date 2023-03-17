@@ -89,10 +89,13 @@ ul li img{
 }
 .current-image{
     margin-top:60px;
+    margin-left:10px;
+    margin-right: 10px;
 }
 .current-image img{
     border-radius:25px;
     margin-bottom:40px;
+   
 }
 .current-image .modal-button{
     border:none;
@@ -145,19 +148,16 @@ ul li img{
     border:none;
 }
 .modal-footer .col-3:hover,.col-3:hover{
-    padding-left: 0px;
-    padding-right: 0px;
     opacity: 0.5;
-    border:3px solid hsl(26, 100%, 55%);
-    
-    
+    border:3px solid hsl(26, 100%, 55%);    
 }
 .thumbnails{
     display:flex;
 }
 .thumbnails img{
     border-radius:25px;
-    padding:0px 10px;
+    margin:0px 10px;
+    width:22%;
 }
 .product-info{
     padding-left: 60px;
