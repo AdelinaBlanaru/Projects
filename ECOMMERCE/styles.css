@@ -41,11 +41,18 @@ ul li img{
 }
 
 .cart-profile .avatar{
-   max-width: 70%;
+   max-width: 50%;
    height: auto;   
 }
 .row .product-info, .row .product-image{
     padding-top:0px;
+}
+.product-info{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-wrap:break-word;
+    padding:0px 100px;
 }
 .product-info p:first-of-type{
     padding-bottom:15px;
@@ -160,35 +167,42 @@ ul li img{
 }
 .price-discount{
     font-weight: bold;
+    display:flex;
+    align-items: center;
 }
 .price-discount span{
     color:hsl(26, 100%, 55%);
     background-color: hsl(25, 100%, 94%);
     border-radius:5px;
-    padding:3px;
+    padding:0px 5px;
 }
 .initial-price{
     text-decoration: line-through;
 }
-.minus, .quantity, .plus{
+.buy-buttons{
+    display:flex;
+    align-items: center;
+}
+.big-button{
     border:none;
     border-radius:5px;
-   
+    background-color:hsl(223, 64%, 98%);
+    margin-right:20px;
 }
-.minus img,  .plus img{
+.big-button-content{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+.minus, .plus{
     padding:10px;
 }
-.minus{
-    margin-right: 0px;
-}
-.plus{
-    margin-left: 0px;
-}
 .quantity{
-    padding:5px 20px;
+    padding:10px 20px;
     font-weight: 700;
-    margin:0px;
 }
+
 .add-to-cart{
     background-color: hsl(26, 100%, 55%);
     color:white;
