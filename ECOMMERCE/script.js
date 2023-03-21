@@ -14,13 +14,8 @@ buttonPlus.addEventListener("click", function() {
 buttonMinus.addEventListener("click", function(){
     CountButtonMinusClicks +=1;
     if (quantity.innerHTML>=1){
-        quantity.innerHTML= quantity.innerHTML-1;
-        if (quantity.innerHTML<=0){
-            quantity.innerHTML=0;
-            CountButtonPlusClicks=0;
-        }
+        quantity.innerHTML= quantity.innerHTML-CountButtonMinusClicks;
     }
-    
 })
 addToCart.addEventListener("click", function(){
     let product=125* quantity.innerHTML;
@@ -28,7 +23,7 @@ addToCart.addEventListener("click", function(){
     
     cartModal.innerHTML=  "Fall Limited Edition Sneakers" + "<br />" + "$125.00 x" + quantity.innerHTML +  "  $" + product.toFixed(2);
     if (cartModal.innerHTML=  "Fall Limited Edition Sneakers $125.00 x " + quantity.innerHTML + "  $" + product.toFixed(2)){
-        cartProductImage.style.display="block";
+        cartProductImage.style.display="inline";
     }   
     
 })

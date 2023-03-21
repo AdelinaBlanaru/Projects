@@ -106,7 +106,8 @@
                     </button>
                   </div>
                   <div class="modal-body">
-                    <button class="previous"> < </button>
+                    <button class="previous">
+                      << /button>
                         <img name="slide" src="images/image-product-1.jpg">
                         <button class="next">></button>
                   </div>
@@ -138,13 +139,20 @@
             $125.00 <span>50%</span>
           </div>
           <div class="initial-price"> $250.00</div>
-          <div class="buy-buttons">
-            <button class="big-button">
-              <div class="big-button-content">
-                <img class="minus" id="minus" src="images/icon-minus.svg">          
-                <div class="quantity" id="quantity">0</div>
-                <img class="plus" id="plus" src="images/icon-plus.svg">
-              </div>
+          <label for="cars">Select Size: </label>
+          <select name="size" id="size">
+            <option value="39">39</option>
+            <option value="40">40</option>
+            <option value="41">41</option>
+            <option value="42">42</option>
+          </select>
+          <div>
+            <button class="minus">
+              <img src="images/icon-minus.svg">
+            </button>
+            <button class="quantity" id="quantity">0</button>
+            <button class="plus" id="plus">
+              <img src="images/icon-plus.svg">
             </button>
             <button class="add-to-cart">
               <img src="images/icon-cart.svg">Add to cart
