@@ -1,0 +1,100 @@
+#header-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding-top: 30px;
+}
+
+.col-5 {
+    display: flex;
+    flex-direction: row;
+}
+
+.input-search {
+    display: flex;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    padding: 10px;
+}
+
+input,
+.search-bttn {
+    border: none;
+    background-color: white;
+}
+
+input:focus {
+    outline: none;
+}
+
+.search-bttn i {
+    color: #EB5757;
+    background-color: white;
+}
+
+#myInput {
+    font-family: 'Muli', sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    color: #333333;
+    border-style: hidden;
+    border-right: 0.5px solid #bdbdbdfc;
+    text-align: left;
+}
+
+.guests {
+    font-family: 'Muli', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #BDBDBD;
+    border-right: 0.5px solid #bdbdbdfc;
+    text-align: left;
+}
+
+.title{
+    display:flex;
+    justify-content: space-between;
+}
+
+.stays-images {
+    display: flex;
+    flex-direction: row;
+}
+
+.col-4 img {
+    border-radius: 25px;
+}
+
+.stays-images {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.stays-images img {
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.col-4 div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col-4 span {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #4F4F4F;
+
+
+}
+
+.col-4 span i {
+    color: #EB5757;
+}
